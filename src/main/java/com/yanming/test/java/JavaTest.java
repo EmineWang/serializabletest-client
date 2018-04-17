@@ -28,14 +28,9 @@ public class JavaTest {
 
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         ObjectOutputStream os = new ObjectOutputStream(bos);
-
         os.writeObject(getPerson());
-
-        os.close();
-
         byte[] buffer = bos.toByteArray();
         os.close();
-
         ByteArrayEntity byteArrayEntity = new ByteArrayEntity(buffer,
                 ContentType.create("x-java-serialized-object", "UTF-8"));
 
@@ -57,6 +52,5 @@ public class JavaTest {
         person.setPhone(188888888);
         return person;
     }
-
 
 }

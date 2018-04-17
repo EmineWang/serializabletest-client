@@ -22,7 +22,6 @@ public class HessianTest {
         // 序列化
         ByteArrayOutputStream os = new ByteArrayOutputStream();
         Hessian2Output h2o = new Hessian2Output(os);
-
         h2o.startMessage();
         h2o.writeObject(getPerson());
         h2o.writeString("I am client.");
@@ -31,7 +30,6 @@ public class HessianTest {
 
         byte[] buffer = os.toByteArray();
         os.close();
-
         ByteArrayEntity byteArrayEntity = new ByteArrayEntity(buffer,
                 ContentType.create("x-application/hessian", "UTF-8"));
 

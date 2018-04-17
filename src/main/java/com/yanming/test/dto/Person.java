@@ -15,8 +15,7 @@ import java.io.Serializable;
 @Data
 public class Person implements Serializable {
 
-    //通过变更serialVersionUID来测试server.
-    //分别测试serialVersionUID与server中Person不一致的情况
+    //通过变更serialVersionUID，分别测试与serializabletest-server中相同和不同的情况
     private static final long serialVersionUID = 6457272772L;
 
     private String[] address;
@@ -24,6 +23,5 @@ public class Person implements Serializable {
     private String name;
 
     private int phone;
-
 
 }
