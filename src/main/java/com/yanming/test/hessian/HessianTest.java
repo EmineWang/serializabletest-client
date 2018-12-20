@@ -15,7 +15,7 @@ import java.util.Date;
 
 public class HessianTest {
 
-    public static String urlName = "http://localhost:8080/hessian/hello";
+    public static String urlName = "http://localhost:8060/hessian/hello";
 
     public static void main(String[] args) throws Throwable {
 

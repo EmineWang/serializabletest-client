@@ -11,7 +11,6 @@ import org.apache.http.impl.client.HttpClients;
 
 import java.io.ByteArrayOutputStream;
 import java.io.ObjectOutputStream;
-import java.util.Date;
 
 /**
  * @author yanming
@@ -21,13 +20,14 @@ import java.util.Date;
  **/
 public class JavaTest {
 
-    public static String urlName = "http://localhost:8080/java/seri";
+    public static String urlName = "http://localhost:8060/java/seri";
 
     public static void main(String[] args) throws Throwable {
 
 
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         ObjectOutputStream os = new ObjectOutputStream(bos);
+        // 输入
         os.writeObject(getPerson());
         byte[] buffer = bos.toByteArray();
         os.close();
