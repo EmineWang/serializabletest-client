@@ -19,7 +19,7 @@ import java.util.Map;
 */
 public class JavaClient {
 
-    public static String urlName = "https://qas-bankrecv.baofoo.com/server/bank/recv/1100392";
+    public static String urlName = "https://xx/xx";
     public static void main(String[] args) throws Throwable {
 
         String postcontent = "发送内容testtstestststst";
